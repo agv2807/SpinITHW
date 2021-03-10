@@ -11,4 +11,5 @@
     <string name="login">Войти</string>
     <string name="to_regist">Нет аккаунта? Регистрация</string>
     <string name="to_login">Уже есть аккаунт? Войти</string>
+    <string name="expample_mail">simpleEmail@pochta.kek</string>
 </resources>

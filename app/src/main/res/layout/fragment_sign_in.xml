@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/lol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textlol"
+            android:textColor="@color/bestColor" android:textSize="36sp"
+            android:textStyle="bold" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"
+            android:layout_weight="1" android:layout_marginBottom="4dp" android:layout_marginTop="4dp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/dz" android:id="@+id/imageView3"
+            android:layout_marginLeft="12dp" android:layout_marginRight="12dp"
+            android:background="@drawable/rounded_corners" android:layout_marginBottom="24dp"/>
+    <TextView
+            android:text="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textmail2"
+            android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <EditText
+            android:layout_width="match_parent" android:backgroundTint="@color/bestColor"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextEmailAuto" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp" android:text="@string/expample_mail"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextPasswordAuto"
+            android:hint="@string/password"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword" />
+    <Button
+            android:text="@string/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/buttonSign"
+            android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp" android:background="@drawable/rounded_corners"/>
+
+    <TextView
+            android:text="@string/to_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textToReg"
+            android:gravity="center"
+            android:paddingBottom="80dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp" />
+</LinearLayout>

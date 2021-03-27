@@ -12,4 +12,6 @@
     <string name="to_regist">Нет аккаунта? Регистрация</string>
     <string name="to_login">Уже есть аккаунт? Войти</string>
     <string name="expample_mail">simpleEmail@pochta.kek</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

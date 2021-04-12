@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMenuActivity(email: String, password: String, information: String){
-        val intent = Intent(this, MainMenuActivity::class.java)
+        val intent = Intent(this, ChatScreen::class.java)
         val user = User(email, password)
         intent.putExtra("user", user)
         intent.putExtra("information", information)

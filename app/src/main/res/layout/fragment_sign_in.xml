@@ -38,7 +38,8 @@
             android:layout_marginRight="12dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:text="1111111111" />
     <Button
             android:text="@string/login"
             android:layout_width="match_parent"

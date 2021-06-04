@@ -48,9 +48,9 @@ class FragmentSignIn : Fragment() {
         }
         if(errorString.isEmpty()){
             activity?.let {
-                (it as MainActivity).openMenuActivity(emailEditText.text.toString(),
-                    passwordEditText.text.toString(),
-                    "Привет, рады тебя снова видеть!")
+                (it as MainActivity).createUserAndOpenChat(emailEditText.text.toString(),
+                    passwordEditText.text.toString()
+                , "lala", "lala")
             }
         }else{
             activity?.let {

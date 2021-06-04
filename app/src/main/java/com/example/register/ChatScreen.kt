@@ -17,9 +17,14 @@ class ChatScreen : AppCompatActivity(){
 
         val chatRv = findViewById<RecyclerView>(R.id.chatRv)
         val editText = findViewById<EditText>(R.id.messageEd)
+        val userNameTv = findViewById<TextView>(R.id.userInfTv)
         val sendMes = findViewById<ImageButton>(R.id.sendMesImB)
         val messages = arrayListOf<Message>()
         val adapter = RvAdapter()
+
+        val userName: String = intent?.getStringExtra("firstName") + "  " + intent?.getStringExtra("lastName")
+
+        userNameTv.text = userName
 
         chatRv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 

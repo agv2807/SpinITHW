@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.TextView
 import com.example.register.MainActivity
 import com.example.register.R
-import kotlinx.android.synthetic.main.fragment_register.*
 
 class FragmentRegister : Fragment() {
 
@@ -19,7 +18,6 @@ class FragmentRegister : Fragment() {
     lateinit var lastName: EditText
     lateinit var passwordEditText: EditText
     lateinit var confirmPassword: EditText
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -73,10 +71,11 @@ class FragmentRegister : Fragment() {
         }
         if(errorString.isEmpty()){
             activity?.let {
-                (it as MainActivity).openMenuActivity(
+                (it as MainActivity).createUserAndOpenChat(
                     emailEditText.text.toString(),
                     passwordEditText.text.toString(),
-                    "Успешная регистрация"
+                    firstName.text.toString(),
+                    lastName.text.toString()
                 )
             }
         }else{
